@@ -20,3 +20,37 @@ This turns project into developer's hell. But you can avoid it by using classes.
 BEM turned out to be the best css methodology for any project, no matter small or big.
 Personally I use simplified version, that covers the basics of BEM usage.
 Follow this link  for details https://ru.bem.info/methodology/quick-start/
+
+## USE namespacing prefixes
+- Component	[c- like c-card c-checklist] Form the backbone of an application and contain all of the cosmetics for a standalone component.
+- Layout module	[l- like l-grid l-container] hese modules have no cosmetics and are purely used to position c- components and structure an application’s layout.
+- Helpers	[h- like h-show h-hide] These utility classes have a single function, often using !important to boost their specificity. (Commonly used for positioning or visibility.)
+- States	[is- / has-	like is-visible has-loaded]	Indicate different states that a c- component can have.
+
+## Separate component positionong from its layout
+Whan it means is that you need to add extra markup around componenrs to set its layout.
+For example you have product card and you want to make a search results grid:
+
+<ul class="l-product-list">
+    <li class="l-product-list__item">
+        //Import c-producr card here
+    </li>
+    <li class="l-product-list__item">
+        //Import c-producr card here
+    </li>
+</ul>
+
+If this list needs to look differently in another page or block, just change the layout. No need for stiles overriding.
+
+## Use helpers and modifiers
+Imagine you have similar looking forms with different contents are used allover the site.
+Most form has button, but each time the button background/size/positioning is a bit different for design needs.
+It is helpfull not to tie button modefecations to particular form, but create modifiers and helpers and reuse them when needed.
+Look at this button:
+
+<button type="submit" class="c-btn c-btn--primary c-btn--bold c-btn--width-xl h-marg-v-20">Next</button>
+
+It has 3 reusable modifiers and one helper, that sets vertical margins to 2em. You don't have to copy and paste same set of styles from form to form.
+If you think it's a bad idea - read BEM and Atomic CSS. This approach is taken from these 2 methodologies.
+
+##
