@@ -31,14 +31,14 @@ Follow this link  for details https://ru.bem.info/methodology/quick-start/
 Whan it means is that you need to add extra markup around componenrs to set its layout.
 For example you have product card and you want to make a search results grid:
 
-<ul class="l-product-list">
-    <li class="l-product-list__item">
-        //Import c-producr card here
-    </li>
-    <li class="l-product-list__item">
-        //Import c-producr card here
-    </li>
-</ul>
+    <ul class="l-product-list">
+        <li class="l-product-list__item">
+            //Import c-producr card here
+        </li>
+        <li class="l-product-list__item">
+            //Import c-producr card here
+        </li>
+    </ul>
 
 If this list needs to look differently in another page or block, just change the layout. No need for stiles overriding.
 
@@ -48,7 +48,7 @@ Most form has button, but each time the button background/size/positioning is a 
 It is helpfull not to tie button modefecations to particular form, but create modifiers and helpers and reuse them when needed.
 Look at this button:
 
-<button type="submit" class="c-btn c-btn--primary c-btn--bold c-btn--width-xl h-marg-v-20">Next</button>
+    <button type="submit" class="c-btn c-btn--primary c-btn--bold c-btn--width-xl h-marg-v-20">Next</button>
 
 It has 3 reusable modifiers and one helper, that sets vertical margins to 2em. You don't have to copy and paste same set of styles from form to form.
 If you think it's a bad idea - read BEM and Atomic CSS. This approach is taken from these 2 methodologies.
