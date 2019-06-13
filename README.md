@@ -31,11 +31,11 @@ Follow this link  for details https://ru.bem.info/methodology/quick-start/
 Whan it means is that you need to add extra markup around componenrs to set its layout.
 For example you have product card and you want to make a search results grid:
 
-    <ul class="l-product-list">
-        <li class="l-product-list__item">
+    <ul class="l-search-results-list">
+        <li class="l-search-results-list__item">
             //Import c-producr card here
         </li>
-        <li class="l-product-list__item">
+        <li class="l-search-results-list__item">
             //Import c-producr card here
         </li>
     </ul>
@@ -43,9 +43,9 @@ For example you have product card and you want to make a search results grid:
 If this list needs to look differently in another page or block, just change the layout. No need for stiles overriding.
 
 ## Use helpers and modifiers
-Imagine you have similar looking forms with different contents are used allover the site.
+Imagine you have similar looking forms with different contents used allover the site.
 Most form has button, but each time the button background/size/positioning is a bit different for design needs.
-It is helpfull not to tie button modefecations to particular form, but create modifiers and helpers and reuse them when needed.
+You can use BEM mix and add "c-signup-form__btn" to style button's position, but i fing it more helpfull not to tie button modefecations to particular form, but create modifiers and helpers and reuse them when needed.
 Look at this button:
 
     <button type="submit" class="c-btn c-btn--primary c-btn--bold c-btn--width-xl h-marg-v-20">Next</button>
