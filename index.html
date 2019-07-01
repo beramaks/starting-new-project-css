@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+let style = `
+  position: absolute;
+  top: -999px;
+  left: 0px;
+  right: auto;
+  bottom: auto;
+  border: 0px;
+  box-sizing: content-box;
+  word-wrap: break-word;
+  overflow: hidden;
+  height: 0px !important;
+  min-height: 0px !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-transform: none;
+  word-spacing: 0px;
+  text-indent: 0px;
+  line-height: 20px;
+  width: 191px;
+`;
+
+function styleToObject(str) {
+    let obj = {};
+    let array = str.split(";");
+    let arr;
+
+    for (let i = 0; i <= array.length; i++ ) {
+        arr = array[i].split(":");
+        //arr[0].replace(/↵/ig, "").trim();
+        //console.log(arr[0]);
+        obj[arr[0]] = arr[1];
+    debugger;
+
+    }
+    //console.log(obj);
+    return obj;
+}
+styleToObject(style);
+ </script>
+</body>
+</html>
