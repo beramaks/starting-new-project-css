@@ -7,15 +7,15 @@ Ems let you control the component size with one line of code, so you don't need 
 It saves hours and hours of your time.
 Imagine you have a small statistics block like this https://www.screencast.com/t/2h2GaoYZF7Z2
 You did all the CSS than the client tells you that he wants this block to be also used on another page, but it should be 2 times bigger.
-If you used pixels, then you need to create a modifier for this block and override all sizes.
+If you use pixels, then you need to create a modifier for this block and override all sizes.
 But, if you used em, you only need to create modifier and write 1 line of code - "font-size: 2em". That's it.
 Each time you need something sized differently - you write 1 line of code.
 You can even resize the whole site if you want to. So use pixels for borders and shadows and leave everything else for em.
 
 ## Use icon fonts or any other working vector solutions
-Using raster icons, such as PNG is a very outdated and time-consuming approach. It becomes a evident when the client asks you to change icon size or color and you have to draw it again or ask a designer to do it.
+Using raster icons, such as PNG is a very outdated and time-consuming approach. It becomes evident when the client asks you to change icon size or color and you have to draw it again or ask a designer to do it.
 It is preferable to use vector icons, such as SVG or icon fonts, where you can change size or color with one line of CSS code.
-I find it more comfortble to use icon fonts because they are easy to use, well supported and do not require any javascript. You can generate your own icon font from SVG icons using IconMoon web app. 
+I find it more comfortable to use icon fonts because they are easy to use, well supported and do not require any javascript. You can generate your own icon font from SVG icons using IconMoon web app. 
 
 ## Use classes instead of element selectors and IDs
 Do not add style to element selectors, like form, article, ul, a and others (normalize CSS is an exception).
@@ -49,7 +49,7 @@ So this is bad:
         }
     }
 
-This is a bit better, because generated CSS will be flat. But searching for ".menu-list__item" will give you 0 results:
+This is a bit better because generated CSS will be flat. But searching for ".menu-list__item" will give you 0 results:
 
     .menu-list {
         list-style-type: none;
@@ -98,12 +98,12 @@ This is much better:
     }
 
 ## Use CSS Variables
-They’re live, native and already well supported so I highly recomend start using them now!
+They’re live, native and already well supported so I highly recommend start using them now!
 https://www.jonathan-harrell.com/unlocking-benefits-css-variables/
 
 ## Use BEM
 BEM turned out to be the best CSS methodology for any project, no matter small or big.
-Personally, I use simplified version, that covers the basics of BEM usage.
+Personally, I use the simplified version, that covers the basics of BEM usage.
 Follow this link for details https://ru.bem.info/methodology/quick-start/
 
 ## USE namespacing prefixes
@@ -221,9 +221,9 @@ Third-party component overrides should be stored in third-party.less file.
 
 
 # Syntax and Formatting
-Сode that looks clean feels clean. It is a much nicer environment to work in, and prompts other team members to maintain the standard of cleanliness that they found. Ugly code sets a bad precedent.
+Сode that looks clean feels clean. It is a much nicer environment to work in and prompts other team members to maintain the standard of cleanliness that they found. The gly code sets a bad precedent.
 
-High-level recomendations:
+High-level recommendations:
 
 - two (2) space indents, no tabs;
 - 80 character wide columns;
@@ -251,7 +251,7 @@ Begin every new major section of a CSS project with a title:
 
 The title of the section is prefixed with a hash (#) symbol to allow us to perform more targeted searches: instead of searching for just SECTION-TITLE which may yield many results — a more scoped search of #SECTION-TITLE should return only the section in question.
 
-Leave a carriage return between this title and the next line of code (be that a comment, some Sass, or some CSS).
+Leave a carriage return between this title and the next line of code (be that comment, some Sass, or some CSS).
 
 If you are working on a project where each section is its own file, this title should appear at the top of each one. If you are working on a project with multiple sections per file, each title should be preceded by five (3) carriage returns. This extra whitespace coupled with a title makes new sections much easier to spot when scrolling through large files:
 
